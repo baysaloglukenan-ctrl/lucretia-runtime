@@ -1,5 +1,8 @@
 # Lucreția Runtime
 
+> **Reference release**
+>
+> This repository is a limited open-source reference snapshot of Lucreția Runtime. Active product development continues privately. Apache-2.0 applies to the code published in this repository; future proprietary development is not automatically released under this license.
 Lucreția Runtime is a local-first production engine for original short-form animated video. It coordinates creative planning, a single opening keyframe, local or hybrid video generation, state recovery, validation, audio/subtitle composition, and publish-ready MP4 output.
 
 The project is designed for developers and small teams that want reproducible AI-media workflows without making a paid cloud provider a mandatory runtime dependency.
