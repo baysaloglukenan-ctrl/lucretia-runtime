@@ -1,0 +1,12 @@
+[project]
+name = "lucretia-runtime"
+version = "1.0.0"
+description = "Local-first runtime for reproducible short-form AI video production"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Kenan Baysaloglu" }]
+dependencies = ["pillow", "imageio", "imageio-ffmpeg", "numpy"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

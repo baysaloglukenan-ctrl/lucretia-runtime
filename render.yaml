@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: lucretia-runtime
+    env: python
+    plan: free
+    buildCommand: python -m pip install --upgrade pip && python -m pip install -e .
+    startCommand: python -m lucretia_runtime.cli serve --host 0.0.0.0
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: LUCRETIA_ACCESS_TOKEN
+        sync: false
+      - key: LUCRETIA_COMFY_MODE
+        value: relay
+      - key: LUCRETIA_WORKER_TOKEN
+        sync: false
+      - key: RUNWAY_API_KEY
+        sync: false
+      - key: RUNWAY_API_BASE
+        value: https://api.dev.runwayml.com/v1
+      - key: RUNWAY_API_VERSION
+        value: "2024-11-06"
+      - key: RUNWAY_MODEL
+        value: seedance2_fast
+      - key: RUNWAY_DEFAULT_DURATION
+        value: "5"
+      - key: RUNWAY_DRY_RUN
+        value: "true"

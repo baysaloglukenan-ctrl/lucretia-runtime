@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+
+# Third-party runtime cloned locally; never vendored in this repository.
+vendor/ComfyUI/
+
+# Runtime outputs and generated media/state are local artifacts.
+data/generated/
